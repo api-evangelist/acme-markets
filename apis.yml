@@ -1,0 +1,217 @@
+aid: acme-markets
+name: Acme Markets
+type: Index
+specificationVersion: '0.19'
+description: >-
+  Acme Markets is a regional supermarket chain founded in 1891 and headquartered in
+  the U.S. Northeast, operating approximately 164 stores across Pennsylvania, New Jersey,
+  Delaware, New York, Connecticut, and Maryland. Acme is a banner of Albertsons Companies,
+  Inc., one of the largest food and drug retailers in the United States. The brand has
+  no publicly documented developer program or public API: digital surfaces (store locator,
+  loyalty program "ACME for U", FreshPass subscription, DriveUp & Go, delivery, pharmacy)
+  are delivered through Albertsons-shared web and mobile platforms. The Android package
+  ID (`com.safeway.client.android.acme`) confirms that the Acme app is built on the
+  shared Safeway/Albertsons banner application, suggesting a shared backend API surface
+  across Albertsons banners that is not externally published.
+url: https://raw.githubusercontent.com/api-evangelist/acme-markets/refs/heads/main/apis.yml
+humanURL: https://www.acmemarkets.com
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Albertsons Banner
+  - Delivery
+  - E-Commerce
+  - Grocery
+  - Loyalty
+  - Pharmacy
+  - Retail
+  - Store Locator
+  - Supermarket
+
+apis:
+  - aid: acme-markets:store-locator
+    name: Acme Markets Store Locator
+    description: >-
+      Public store-locator surface used by the Acme Markets website to render store
+      information (address, hours, services, phone, departments). Pages are rendered
+      under the `local.acmemarkets.com` subdomain, a pattern typical of vendor-hosted
+      local-pages SEO platforms (e.g. Rio SEO, Yext, Brandify). No public JSON
+      endpoint or developer documentation has been published; the locator UI is the
+      only externally observable surface.
+    humanURL: https://local.acmemarkets.com/search.html
+    baseURL: https://local.acmemarkets.com
+    tags:
+      - Locations
+      - SEO
+      - Store Locator
+    properties:
+      - type: Documentation
+        url: https://local.acmemarkets.com/search.html
+
+  - aid: acme-markets:acme-for-u-loyalty
+    name: ACME for U Loyalty Program
+    description: >-
+      ACME for U is the chain's free loyalty program, surfacing personalized weekly
+      ad deals, digital coupons, and Points redeemable for fuel and groceries. The
+      program is delivered through the Acme Markets website and mobile app and shares
+      the underlying account and offers platform with other Albertsons banners
+      (Safeway, Vons, Jewel-Osco, etc.). No public OAuth/API documentation is
+      available; integrations are performed exclusively through the first-party
+      web and mobile clients.
+    humanURL: https://www.acmemarkets.com/foru/program-details.html
+    baseURL: https://www.acmemarkets.com
+    tags:
+      - Coupons
+      - Deals
+      - Loyalty
+      - Points
+      - Rewards
+    properties:
+      - type: Documentation
+        url: https://www.acmemarkets.com/foru/program-details.html
+      - type: SignUp
+        url: https://www.acmemarkets.com/account/register.html
+
+  - aid: acme-markets:freshpass-subscription
+    name: FreshPass Delivery Subscription
+    description: >-
+      FreshPass is the Albertsons-family paid subscription that provides unlimited
+      free grocery delivery, exclusive deals, and additional Points on the Acme
+      Markets e-commerce platform. The Acme storefront markets FreshPass directly;
+      the subscription management surface is shared across Albertsons banners.
+      There is no publicly documented API.
+    humanURL: https://www.acmemarkets.com/freshpass.html
+    baseURL: https://www.acmemarkets.com
+    tags:
+      - Delivery
+      - Membership
+      - Subscription
+    properties:
+      - type: Documentation
+        url: https://www.acmemarkets.com/freshpass.html
+
+  - aid: acme-markets:driveup-and-go
+    name: DriveUp & Go Curbside Pickup
+    description: >-
+      DriveUp & Go is the Acme Markets / Albertsons-family curbside pickup product
+      ordered through the website and mobile app. Customers build an order online,
+      schedule a pickup window, and check in via the app. The ordering, slot,
+      payment, and fulfillment endpoints are not exposed as a public developer API.
+    humanURL: https://www.acmemarkets.com/grocery-delivery-services.html
+    baseURL: https://www.acmemarkets.com
+    tags:
+      - Curbside
+      - E-Commerce
+      - Fulfillment
+      - Pickup
+    properties:
+      - type: Documentation
+        url: https://www.acmemarkets.com/grocery-delivery-services.html
+
+  - aid: acme-markets:pharmacy
+    name: Acme Markets Pharmacy
+    description: >-
+      Acme Markets operates in-store pharmacies offering prescription refills,
+      transfers, immunizations, and pharmacy account management. The pharmacy
+      surface is delivered through the website and the shared Albertsons mobile
+      app. No public API is documented; HIPAA-regulated workflows operate over
+      first-party authenticated channels only.
+    humanURL: https://www.acmemarkets.com/pharmacy.html
+    baseURL: https://www.acmemarkets.com
+    tags:
+      - Healthcare
+      - Pharmacy
+      - Prescriptions
+      - Vaccines
+    properties:
+      - type: Documentation
+        url: https://www.acmemarkets.com/pharmacy.html
+
+  - aid: acme-markets:mobile-app
+    name: ACME Markets Deals & Delivery Mobile App
+    description: >-
+      The ACME Markets Deals & Delivery mobile application consolidates the
+      shopping list, weekly ad, digital coupons, Points, purchase history,
+      DriveUp & Go ordering, delivery, contactless payment, pharmacy, fuel,
+      and Store Mode (aisle locations) into a single client. The Android
+      package identifier `com.safeway.client.android.acme` confirms it is
+      built on the shared Safeway/Albertsons banner application codebase,
+      indicating a shared backend API surface across Albertsons banners that
+      is not externally published or documented.
+    humanURL: https://www.acmemarkets.com/about-us/mobile-apps.html
+    baseURL: https://www.acmemarkets.com
+    tags:
+      - Android
+      - Mobile App
+      - iOS
+    properties:
+      - type: Documentation
+        url: https://www.acmemarkets.com/about-us/mobile-apps.html
+      - type: iOSApp
+        url: https://apps.apple.com/us/app/acme-markets-deals-rewards/id667621570
+      - type: AndroidApp
+        url: https://play.google.com/store/apps/details?id=com.safeway.client.android.acme
+
+common:
+  - type: Website
+    url: https://www.acmemarkets.com
+  - type: AboutUs
+    url: https://www.acmemarkets.com/about-us.html
+  - type: ParentCompany
+    url: https://www.albertsonscompanies.com
+  - type: Careers
+    url: https://www.acmemarkets.com/about-us/careers.html
+  - type: ContactUs
+    url: https://www.acmemarkets.com/about-us/contact-us.html
+  - type: TermsOfService
+    url: https://www.acmemarkets.com/content/dam/shared/legal/terms-of-use.html
+  - type: PrivacyPolicy
+    url: https://www.acmemarkets.com/content/dam/shared/legal/privacy-policy.html
+  - type: GitHubOrganization
+    url: https://github.com/api-evangelist/acme-markets
+  - type: Features
+    data:
+      - name: ACME for U Loyalty
+        description: Free loyalty program with personalized deals, digital coupons, and Points redeemable for fuel and groceries.
+      - name: FreshPass Subscription
+        description: Paid membership providing unlimited free grocery delivery and exclusive member pricing on the Acme e-commerce platform.
+      - name: DriveUp & Go Curbside Pickup
+        description: Schedule-based curbside grocery pickup ordered through the website or mobile app.
+      - name: Home Delivery
+        description: Grocery home delivery across the Northeast service area through the Acme storefront.
+      - name: In-Store Pharmacy
+        description: Pharmacy services including prescription refills, transfers, immunizations, and account management.
+      - name: Fuel Rewards
+        description: Points earned through ACME for U can be redeemed for cents-off per gallon at participating fuel stations.
+      - name: Store Mode
+        description: In-store mobile app mode surfacing aisle locations and one-tap coupon clipping while shopping.
+      - name: Mobile Application
+        description: Native iOS and Android client built on the shared Safeway/Albertsons banner codebase consolidating all shopping surfaces.
+  - type: UseCases
+    data:
+      - name: Store Discovery
+        description: Locate the nearest Acme Markets store, departments, hours, and pharmacy services via the store locator.
+      - name: Weekly Ad Shopping
+        description: Browse the personalized weekly ad, clip digital coupons, and build a shopping list before visiting the store.
+      - name: Online Grocery Ordering
+        description: Place orders for DriveUp & Go pickup or home delivery through the website or mobile application.
+      - name: Pharmacy Management
+        description: Refill prescriptions, transfer pharmacies, and schedule immunizations through the digital pharmacy surface.
+      - name: Loyalty Engagement
+        description: Earn and redeem Points across grocery and fuel purchases through the ACME for U program.
+  - type: Integrations
+    data:
+      - name: Albertsons Companies Platform
+        description: Acme is operated as an Albertsons banner; loyalty, e-commerce, pharmacy, and mobile surfaces share the parent platform.
+      - name: Safeway Mobile Codebase
+        description: The Acme Markets mobile app is built on the shared Safeway / Albertsons banner application (Android package `com.safeway.client.android.acme`).
+      - name: FreshPass Membership
+        description: Cross-banner Albertsons subscription product surfaced on the Acme storefront.
+      - name: Local Pages Platform
+        description: Per-store landing pages delivered via the `local.acmemarkets.com` subdomain, a pattern typical of vendor-hosted local-pages SEO platforms.
+
+maintainers:
+  - name: Kin Lane
+    email: kin@apievangelist.com
+
+created: '2026-05-22'
+modified: '2026-05-23'
