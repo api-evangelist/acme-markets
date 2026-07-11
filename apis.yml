@@ -152,6 +152,8 @@ apis:
         url: https://play.google.com/store/apps/details?id=com.safeway.client.android.acme
 
 common:
+  - type: DomainSecurity
+    url: security/acme-markets-domain-security.yml
   - type: Website
     url: https://www.acmemarkets.com
   - type: AboutUs
