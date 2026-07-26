@@ -88,11 +88,6 @@ Acme Markets operates in-store pharmacies offering prescription refills, transfe
 
 - [Documentation](https://www.acmemarkets.com/pharmacy.html)
 
-### ACME Markets Deals & Delivery Mobile App
-
-The ACME Markets Deals & Delivery mobile application consolidates the shopping list, weekly ad, digital coupons, Points, purchase history, DriveUp & Go ordering, delivery, contactless payment, pharmacy, fuel, and Store Mode (aisle locations) into a single client. The Android package identifier `com.safeway.client.android.acme` confirms it is built on the shared Safeway/Albertsons banner application codebase, indicating a shared backend API surface across Albertsons banners that is not externally published or documented.
-
-**Human URL:** [https://www.acmemarkets.com/about-us/mobile-apps.html](https://www.acmemarkets.com/about-us/mobile-apps.html)
 
 #### Tags:
 

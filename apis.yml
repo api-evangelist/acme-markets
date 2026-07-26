@@ -1,6 +1,17 @@
 aid: acme-markets
 name: Acme Markets
 type: Index
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.19'
 description: >-
   Acme Markets is a regional supermarket chain founded in 1891 and headquartered in
@@ -15,7 +26,7 @@ description: >-
   across Albertsons banners that is not externally published.
 url: https://raw.githubusercontent.com/api-evangelist/acme-markets/refs/heads/main/apis.yml
 humanURL: https://www.acmemarkets.com
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acme-markets.png
 tags:
   - Albertsons Banner
   - Delivery
@@ -126,31 +137,6 @@ apis:
       - type: Documentation
         url: https://www.acmemarkets.com/pharmacy.html
 
-  - aid: acme-markets:mobile-app
-    name: ACME Markets Deals & Delivery Mobile App
-    description: >-
-      The ACME Markets Deals & Delivery mobile application consolidates the
-      shopping list, weekly ad, digital coupons, Points, purchase history,
-      DriveUp & Go ordering, delivery, contactless payment, pharmacy, fuel,
-      and Store Mode (aisle locations) into a single client. The Android
-      package identifier `com.safeway.client.android.acme` confirms it is
-      built on the shared Safeway/Albertsons banner application codebase,
-      indicating a shared backend API surface across Albertsons banners that
-      is not externally published or documented.
-    humanURL: https://www.acmemarkets.com/about-us/mobile-apps.html
-    baseURL: https://www.acmemarkets.com
-    tags:
-      - Android
-      - Mobile App
-      - iOS
-    properties:
-      - type: Documentation
-        url: https://www.acmemarkets.com/about-us/mobile-apps.html
-      - type: iOSApp
-        url: https://apps.apple.com/us/app/acme-markets-deals-rewards/id667621570
-      - type: AndroidApp
-        url: https://play.google.com/store/apps/details?id=com.safeway.client.android.acme
-
 common:
   - type: DomainSecurity
     url: security/acme-markets-domain-security.yml
@@ -211,9 +197,11 @@ common:
       - name: Local Pages Platform
         description: Per-store landing pages delivered via the `local.acmemarkets.com` subdomain, a pattern typical of vendor-hosted local-pages SEO platforms.
 
+  - type: About
+    url: https://www.acmemarkets.com/about-us/mobile-apps.html
 maintainers:
   - name: Kin Lane
     email: kin@apievangelist.com
 
 created: '2026-05-22'
-modified: '2026-05-23'
+modified: '2026-07-25'
