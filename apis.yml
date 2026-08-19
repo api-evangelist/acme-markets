@@ -12,7 +12,7 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Acme Markets is a regional supermarket chain founded in 1891 and headquartered in
   the U.S. Northeast, operating approximately 164 stores across Pennsylvania, New Jersey,
