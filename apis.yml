@@ -36,6 +36,8 @@ description: >-
   shared Safeway/Albertsons banner application, suggesting a shared backend API surface
   across Albertsons banners that is not externally published.
 url: https://raw.githubusercontent.com/api-evangelist/acme-markets/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 humanURL: https://www.acmemarkets.com
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acme-markets.png
 tags:
