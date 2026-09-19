@@ -64,6 +64,10 @@ apis:
     humanURL: https://local.acmemarkets.com/search.html
     baseURL: https://local.acmemarkets.com
     tags:
+      - Location
+      - SEO
+      - Store Locator
+    tags_raw:
       - Locations
       - SEO
       - Store Locator
