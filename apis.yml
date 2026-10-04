@@ -86,7 +86,6 @@ apis:
       available; integrations are performed exclusively through the first-party
       web and mobile clients.
     humanURL: https://www.acmemarkets.com/foru/program-details.html
-    baseURL: https://www.acmemarkets.com
     tags:
       - Coupons
       - Deals
@@ -108,7 +107,6 @@ apis:
       the subscription management surface is shared across Albertsons banners.
       There is no publicly documented API.
     humanURL: https://www.acmemarkets.com/freshpass.html
-    baseURL: https://www.acmemarkets.com
     tags:
       - Delivery
       - Membership
@@ -125,7 +123,6 @@ apis:
       schedule a pickup window, and check in via the app. The ordering, slot,
       payment, and fulfillment endpoints are not exposed as a public developer API.
     humanURL: https://www.acmemarkets.com/grocery-delivery-services.html
-    baseURL: https://www.acmemarkets.com
     tags:
       - Curbside
       - E-Commerce
@@ -136,6 +133,7 @@ apis:
         url: https://www.acmemarkets.com/grocery-delivery-services.html
 
   - aid: acme-markets:pharmacy
+    x-published: false
     name: Acme Markets Pharmacy
     description: >-
       Acme Markets operates in-store pharmacies offering prescription refills,
@@ -144,7 +142,6 @@ apis:
       app. No public API is documented; HIPAA-regulated workflows operate over
       first-party authenticated channels only.
     humanURL: https://www.acmemarkets.com/pharmacy.html
-    baseURL: https://www.acmemarkets.com
     tags:
       - Healthcare
       - Pharmacy
