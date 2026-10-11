@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "acme-markets",
+    "captured_at": "2026-10-11T135440",
+    "source_url": "https://www.acmemarkets.com",
+    "source_type": "Website",
+    "file": "acme-markets-2026-10-11T135440.png",
+    "bytes": 32200,
+    "capture": "playwright-local"
+  }
+]
