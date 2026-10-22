@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/acme-markets/integrations
 - https://n8n.io/integrations/acme-markets/
@@ -10,7 +10,59 @@ checked:
 - https://monid.ai/tools/acme-markets
 - https://n8n.io/integrations/acme-markets/
 - https://zapier.com/apps/acme-markets/integrations
+- https://directory.cms.gov/fhir/
+- https://download.cms.gov/nppes/NPI_Files.html
+- https://npiregistry.cms.hhs.gov/
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: CMS NPPES (National Plan and Provider Enumeration System)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://npiregistry.cms.hhs.gov/api/?version=2.1&number=1023064029
+  category: US healthcare provider NPI enumeration
+  contract_reference:
+    register: CMS NPPES NPI Registry (npiregistry.cms.hhs.gov API v2.1, NPI-2 organisations)
+    standard: National Provider Identifier (HIPAA standard unique health identifier, 45 CFR 162 Subpart D)
+    spec_file: null
+    role: npi-2-organization
+    registered_name: ACME MARKETS INC
+    register_id: '1023064029'
+    register_country: US
+    register_state: PA
+    npi_status: A
+    enumeration_date: '2006-05-25'
+    primary_taxonomy: Pharmacy, Community/Retail Pharmacy
+    primary_taxonomy_code: 3336C0003X
+    matched_domain: acmemarkets.com
+    matched_by: register-name+state
+    other_registrations:
+    - '1033165030'
+    - '1033304183'
+    - '1043267495'
+    - '1053367052'
+    - '1073569570'
+    - '1104872100'
+    - '1114973112'
+    - '1124074125'
+    - '1144276148'
+    - '1164478665'
+    national_directory:
+      ndh: found
+      ndh_verification_status: complete
+      ndh_part_of: null
+    signal_note: 'regulated identity: the organisation is enumerated in NPPES (an NPI-2 is required of HIPAA covered
+      healthcare providers); exact legal name AND (an own-domain endpoint or the Wikidata HQ state); other NPIs
+      are context, never counted'
+    detected_by: sweep-us-npi-health-provider-registry.py
+    detected: '2026-10-22'
+    hq_state: PA
+    identity: wikidata Q341975 'Acme Markets' P856 https://www.acmemarkets.com/
+    identity_source: wikidata P856 + P159 (HQ state; labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-us-npi-health-provider-registry.py
+  first_seen: '2026-10-22'
 templates: []
