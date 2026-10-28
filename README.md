@@ -1,4 +1,4 @@
-# Acme Markets (acme-markets)
+# Acme Markets
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,148 +66,88 @@
 
 Acme Markets is a regional supermarket chain founded in 1891 and headquartered in the U.S. Northeast, operating approximately 164 stores across Pennsylvania, New Jersey, Delaware, New York, Connecticut, and Maryland. Acme is a banner of Albertsons Companies, Inc., one of the largest food and drug retailers in the United States. The brand has no publicly documented developer program or public API: digital surfaces (store locator, loyalty program "ACME for U", FreshPass subscription, DriveUp & Go, delivery, pharmacy) are delivered through Albertsons-shared web and mobile platforms. The Android package ID (`com.safeway.client.android.acme`) confirms that the Acme app is built on the shared Safeway/Albertsons banner application, suggesting a shared backend API surface across Albertsons banners that is not externally published.
 
-**URL:** [Visit APIs.json URL](https://www.acmemarkets.com)
+**Areas:** Albertsons Banner · Delivery · E-Commerce · Grocery · Loyalty · Pharmacy · Retail · Store Locator · Supermarket
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Acme Markets on APIs.io
 
-## Tags:
+Everything profiled for Acme Markets is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/acme-markets/](https://apis.io/providers/acme-markets/)** — or go straight to one of the APIs or properties below.
 
- - Albertsons Banner, Delivery, E-Commerce, Grocery, Loyalty, Pharmacy, Retail, Store Locator, Supermarket
+### APIs (5)
 
-## Timestamps
+- [Acme Markets Store Locator](https://apis.io/apis/acme-markets/store-locator/) — Public store-locator surface used by the Acme Markets website to render store information (address, hours, services, phone, departments). Pages are rendered…
+- [ACME for U Loyalty Program](https://apis.io/apis/acme-markets/acme-for-u-loyalty/) — ACME for U is the chain's free loyalty program, surfacing personalized weekly ad deals, digital coupons, and Points redeemable for fuel and groceries. The…
+- [FreshPass Delivery Subscription](https://apis.io/apis/acme-markets/freshpass-subscription/) — FreshPass is the Albertsons-family paid subscription that provides unlimited free grocery delivery, exclusive deals, and additional Points on the Acme…
+- [DriveUp & Go Curbside Pickup](https://apis.io/apis/acme-markets/driveup-and-go/) — DriveUp & Go is the Acme Markets / Albertsons-family curbside pickup product ordered through the website and mobile app. Customers build an order online,…
+- [Acme Markets Pharmacy](https://apis.io/apis/acme-markets/pharmacy/) — Acme Markets operates in-store pharmacies offering prescription refills, transfers, immunizations, and pharmacy account management. The pharmacy surface is…
 
-- **Created:** 2026-05-22
-- **Modified:** 2026-05-23
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Acme Markets Store Locator
+#### Security (1)
 
-Public store-locator surface used by the Acme Markets website to render store information (address, hours, services, phone, departments). Pages are rendered under the `local.acmemarkets.com` subdomain, a pattern typical of vendor-hosted local-pages SEO platforms (e.g. Rio SEO, Yext, Brandify). No public JSON endpoint or developer documentation has been published; the locator UI is the only externally observable surface.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://local.acmemarkets.com/search.html](https://local.acmemarkets.com/search.html)
+- [Acme Markets Domain Security](https://apis.io/security/acme-markets/acme-markets-domain-security/)
 
-#### Tags:
+## Where to find this API
 
- - Locations, SEO, Store Locator
-
-#### Properties
-
-- [Documentation](https://local.acmemarkets.com/search.html)
-
-### ACME for U Loyalty Program
-
-ACME for U is the chain's free loyalty program, surfacing personalized weekly ad deals, digital coupons, and Points redeemable for fuel and groceries. The program is delivered through the Acme Markets website and mobile app and shares the underlying account and offers platform with other Albertsons banners (Safeway, Vons, Jewel-Osco, etc.). No public OAuth/API documentation is available; integrations are performed exclusively through the first-party web and mobile clients.
-
-**Human URL:** [https://www.acmemarkets.com/foru/program-details.html](https://www.acmemarkets.com/foru/program-details.html)
-
-#### Tags:
-
- - Coupons, Deals, Loyalty, Points, Rewards
-
-#### Properties
-
-- [Documentation](https://www.acmemarkets.com/foru/program-details.html)
-- [SignUp](https://www.acmemarkets.com/account/register.html)
-
-### FreshPass Delivery Subscription
-
-FreshPass is the Albertsons-family paid subscription that provides unlimited free grocery delivery, exclusive deals, and additional Points on the Acme Markets e-commerce platform. The Acme storefront markets FreshPass directly; the subscription management surface is shared across Albertsons banners. There is no publicly documented API.
-
-**Human URL:** [https://www.acmemarkets.com/freshpass.html](https://www.acmemarkets.com/freshpass.html)
-
-#### Tags:
-
- - Delivery, Membership, Subscription
-
-#### Properties
-
-- [Documentation](https://www.acmemarkets.com/freshpass.html)
-
-### DriveUp & Go Curbside Pickup
-
-DriveUp & Go is the Acme Markets / Albertsons-family curbside pickup product ordered through the website and mobile app. Customers build an order online, schedule a pickup window, and check in via the app. The ordering, slot, payment, and fulfillment endpoints are not exposed as a public developer API.
-
-**Human URL:** [https://www.acmemarkets.com/grocery-delivery-services.html](https://www.acmemarkets.com/grocery-delivery-services.html)
-
-#### Tags:
-
- - Curbside, E-Commerce, Fulfillment, Pickup
-
-#### Properties
-
-- [Documentation](https://www.acmemarkets.com/grocery-delivery-services.html)
-
-### Acme Markets Pharmacy
-
-Acme Markets operates in-store pharmacies offering prescription refills, transfers, immunizations, and pharmacy account management. The pharmacy surface is delivered through the website and the shared Albertsons mobile app. No public API is documented; HIPAA-regulated workflows operate over first-party authenticated channels only.
-
-**Human URL:** [https://www.acmemarkets.com/pharmacy.html](https://www.acmemarkets.com/pharmacy.html)
-
-#### Tags:
-
- - Healthcare, Pharmacy, Prescriptions, Vaccines
-
-#### Properties
-
-- [Documentation](https://www.acmemarkets.com/pharmacy.html)
-
-
-#### Tags:
-
- - Android, Mobile App, iOS
-
-#### Properties
-
-- [Documentation](https://www.acmemarkets.com/about-us/mobile-apps.html)
-- [iOSApp](https://apps.apple.com/us/app/acme-markets-deals-rewards/id667621570)
-- [AndroidApp](https://play.google.com/store/apps/details?id=com.safeway.client.android.acme)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.acmemarkets.com)
-- [AboutUs](https://www.acmemarkets.com/about-us.html)
-- [ParentCompany](https://www.albertsonscompanies.com)
-- [Careers](https://www.acmemarkets.com/about-us/careers.html)
-- [ContactUs](https://www.acmemarkets.com/about-us/contact-us.html)
-- [TermsOfService](https://www.acmemarkets.com/content/dam/shared/legal/terms-of-use.html)
-- [PrivacyPolicy](https://www.acmemarkets.com/content/dam/shared/legal/privacy-policy.html)
-- [GitHubOrganization](https://github.com/api-evangelist/acme-markets)
+- [Terms of service](https://www.acmemarkets.com/content/dam/shared/legal/terms-of-use.html)
+- [Privacy policy](https://www.acmemarkets.com/content/dam/shared/legal/privacy-policy.html)
+- [GitHub](https://github.com/api-evangelist/acme-markets)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| ACME for U Loyalty | Free loyalty program with personalized deals, digital coupons, and Points redeemable for fuel and groceries. |
-| FreshPass Subscription | Paid membership providing unlimited free grocery delivery and exclusive member pricing on the Acme e-commerce platform. |
-| DriveUp & Go Curbside Pickup | Schedule-based curbside grocery pickup ordered through the website or mobile app. |
-| Home Delivery | Grocery home delivery across the Northeast service area through the Acme storefront. |
-| In-Store Pharmacy | Pharmacy services including prescription refills, transfers, immunizations, and account management. |
-| Fuel Rewards | Points earned through ACME for U can be redeemed for cents-off per gallon at participating fuel stations. |
-| Store Mode | In-store mobile app mode surfacing aisle locations and one-tap coupon clipping while shopping. |
-| Mobile Application | Native iOS and Android client built on the shared Safeway/Albertsons banner codebase consolidating all shopping surfaces. |
+**Kin Score 9.7** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 13.2 |
 
-| Name | Description |
-|------|-------------|
-| Store Discovery | Locate the nearest Acme Markets store, departments, hours, and pharmacy services via the store locator. |
-| Weekly Ad Shopping | Browse the personalized weekly ad, clip digital coupons, and build a shopping list before visiting the store. |
-| Online Grocery Ordering | Place orders for DriveUp & Go pickup or home delivery through the website or mobile application. |
-| Pharmacy Management | Refill prescriptions, transfer pharmacies, and schedule immunizations through the digital pharmacy surface. |
-| Loyalty Engagement | Earn and redeem Points across grocery and fuel purchases through the ACME for U program. |
+**Agent readiness 0.0** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Albertsons Companies Platform | Acme is operated as an Albertsons banner; loyalty, e-commerce, pharmacy, and mobile surfaces share the parent platform. |
-| Safeway Mobile Codebase | The Acme Markets mobile app is built on the shared Safeway / Albertsons banner application (Android package `com.safeway.client.android.acme`). |
-| FreshPass Membership | Cross-banner Albertsons subscription product surfaced on the Acme storefront. |
-| Local Pages Platform | Per-store landing pages delivered via the `local.acmemarkets.com` subdomain, a pattern typical of vendor-hosted local-pages SEO platforms. |
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/acme-markets/](https://apis.io/providers/acme-markets/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Acme Markets: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/acme-markets/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
